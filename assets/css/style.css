@@ -1,8 +1,86 @@
+@font-face {
+    font-family:'Gotham';
+    src: url("https://www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-Book.otf")
+   }
+   @font-face {
+    font-family:'GothamItalic';
+    src: url("https://www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-BookItalic.otf")
+   }
+   @font-face {
+    font-family:'GothamLight';
+    src: url("https://www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-Light.otf")
+   }
+   @font-face {
+    font-family:'GothamLightItalic';
+    src: url("https://www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-LightItalic.otf")
+   }
+   @font-face {
+    font-family:'GothamBold';
+    src: url("https://www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-Bold.otf")
+   }
+   @font-face {
+    font-family:'GothamBoldItalic';
+    src: url("https://www.daz3d.com/skin/frontend/enterprise/daznew/font/gotham/Gotham-BoldItalic.otf")
+   }
 html, body {
     margin: 0;
     padding: 0;
 }
+body {
+    
+    background: url('../images/wal.jpg') fixed;
+    background-size: cover;
+}
+.container {
+    background: white;
+    border: 1px solid lightgrey;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.25);
+    margin: 4% auto;
+}
+.magicMike {
+    margin: 2%;
 
+}
 .startShow {
     display: block;
+}
+.answerButton {
+    padding: 10px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    margin: 4px;
+}
+header {
+    width: 100%;
+    padding: 4% 0;
+    font-size: 2.4rem;
+    font-family:'GothamBold';
+    color: lightgrey;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 2%;
+}
+#questionHolder button, .asdf {
+
+    margin: 3px auto;
+    cursor: pointer;
+}
+#questionHolder button {
+width: 90%;
+}
+#questionHolder button:hover, .asdf:hover {
+    background: rgb(226,226,226); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+}
+#imageHolder img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
 }
